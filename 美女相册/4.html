@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>4</title>
+    <style>
+        body {
+            margin: 30px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <input type="button" value="按钮1" data-src="../images/02.jpg">
+        <input type="button" value="按钮2" data-src="../images/01.jpg">
+        <input type="button" value="按钮3" data-src="../images/03.jpg">
+        <input type="button" value="按钮4" data-src="../images/05.jpg">
+        <input type="button" value="按钮5" data-src="../images/04.jpg">
+    </div>
+    <div class="son">
+        <img src="../images/04.jpg" alt="" id="tu">
+    </div>
+</body>
+<script>
+    // 思路：让图片等于自定义中设立的图片路径
+    // 获取元素
+    let bo = document.getElementsByTagName('input');
+    let tu = document.getElementById('tu');
+    for (var i = 0; i < bo.length; i++) {
+        bo[i].onclick = function () {
+            let tu1 = this.dataset.src
+            tu.src = tu1;
+        };
+    };
+</script>
+
+</html>

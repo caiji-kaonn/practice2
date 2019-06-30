@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+    <style>
+    .son{
+        margin: 40px auto;
+    }
+    img{
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <input type="button" value="按钮1">
+        <input type="button" value="按钮2">
+        <input type="button" value="按钮3">
+        <input type="button" value="按钮4">
+        <input type="button" value="按钮5">
+    </div>
+    <div class="son">
+        <img src="../images/01.jpg" alt="" id="tu">
+    </div>
+</body>
+<script>
+// 实现5个按钮，可以转换5张不同的图片
+// 思路：获取input元素，对里面的图片作更换；
+
+// 由于有多个input元素，用标签来获取元素
+let an = document.getElementsByTagName('input');
+let img = document.getElementById('tu');
+// 用点击注册事件更换里面的图片,注意an是个伪数组；
+for(let i=0;i<an.length;i++){
+    an[i].onclick=function(){
+        // 选中图片的属性，修改图片的路径
+       img.src='../images/0'+(i+1)+'.jpg'
+    };
+};
+
+
+
+
+
+</script>
+</html>

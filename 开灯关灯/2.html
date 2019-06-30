@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2</title>
+</head>
+<body style="background-color: yellow">
+    <input type="button" value="灯按钮" id="openlighting">
+</body>
+<script>
+// 设置开灯和关灯的背景颜色不一样
+// 先用id来获取元素,当只设置了一个元素的时候：
+let bu = document.getElementById('openlighting');
+bu.onclick=function(){
+    if(bu.value==="开灯"){
+        document.body.style.backgroundColor='black';
+        bu.value="关灯";
+    }else{
+        document.body.style.backgroundColor='white';
+        bu.value="开灯";
+    };
+};
+
+
+</script>
+</html>

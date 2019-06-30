@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2</title>
+    <style>
+        .son {
+            margin: 30px auto;
+        }
+
+        ;
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <input type="button" value="按钮1">
+        <input type="button" value="按钮2">
+        <input type="button" value="按钮3">
+        <input type="button" value="按钮4">
+        <input type="button" value="按钮5">
+    </div>
+    <div class="son"><img src="../images/02.jpg" alt="" id="tu"></div>
+</body>
+<script>
+    // 获取input元素
+    let ha = document.getElementsByTagName('input');
+    let tu = document.getElementById('tu');
+    for(let i=0;i<ha.length;i++){
+        ha[i].onclick=function(){
+            tu.src='../images/0'+(i+1)+'.jpg'
+        };
+    };
+</script>
+
+</html>

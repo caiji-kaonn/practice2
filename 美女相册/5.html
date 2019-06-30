@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5</title>
+    <style>
+    body{
+        margin: 30px auto;
+    };
+    
+    </style>
+</head>
+<body>
+    <div class="fanther">
+        <input type="button" value="按钮1">
+        <input type="button" value="按钮2">
+        <input type="button" value="按钮3">
+        <input type="button" value="按钮4">
+        <input type="button" value="按钮5">
+    </div>
+    <div class="son">
+        <img src="../images/05.jpg" alt="" id="dian">
+    </div>
+</body>
+<script>
+let inp= document.getElementsByTagName('input');
+let tu = document.getElementById('dian');
+for(let i=0;i<inp.length;i++){
+    inp[i].onclick=function(){
+       tu.src='../images/0' +(i+1) +'.jpg';
+    };
+};
+
+
+</script>
+
+</html>

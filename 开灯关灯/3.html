@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3</title>
+</head>
+<body style="background-color: green">
+    <input type="button" value="灯按钮" id="deng">
+</body>
+<script>
+// 设置一个灯不同的效果
+// 获取id元素
+let bot = document.getElementById('deng');
+// 注册事件，显示效果
+bot.onclick=function(){
+//  找元素的属性
+ if(bot.value==='开灯'){
+     document.body.style.backgroundColor='white';
+     bot.value='关灯';
+ }else{
+    document.body.style.backgroundColor='black';
+    bot.value='开灯';
+ };
+};
+
+
+
+
+</script>
+</html>

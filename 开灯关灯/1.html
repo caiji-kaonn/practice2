@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+</head>
+<body style="background-color: pink">
+    <input type="button" value="开灯" id="ladeng">
+    <input type="button" value="关灯" id="bideng">
+</body>
+<script>
+// 设置开灯和关灯的背景颜色不一样
+
+// 首先先获取两个按钮的元素,用id名来获取
+let opendeng = document.getElementById("ladeng");
+let closedeng = document.getElementById("bideng");
+
+// 然后用注册事件，对这两个按钮的点击进行效果操作,  事件源.on事件类型=function(){}
+opendeng.onclick=function(){
+    // 获取元素的属性，进行背景颜色更改 ， 元素.属性 ，body是比较特殊的，可直接 document.body 点属性
+      document.body.style.backgroundColor='white';
+};
+closedeng.onclick=function(){
+      document.body.style.backgroundColor='black';
+}
+
+</script>
+
+</html>
